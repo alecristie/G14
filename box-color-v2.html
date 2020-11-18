@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prueba 1</title>
+
+    <style>
+        #box {
+            width: 170px;
+            height: 170px;
+            background-color: red;
+        }
+
+        #caja1 {
+            width: 400px;
+            height: 400px;
+        }
+
+        #caja2 {
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+
+</head>
+
+<body id="body">
+    <div id="box"></div>
+    <button id="caja1"> x400 </button>
+    <button id="caja2"> x100 </button>
+
+
+    <script>
+        var caja = document.getElementById("box");
+        var x400 = document.getElementById('caja1');
+        var x100 = document.getElementById('caja2');
+
+
+        x400.addEventListener('click', function () {
+            cambiar_tamaño("caja1");
+        });
+        x100.addEventListener('click', function () {
+            cambiar_tamaño("caja2");
+        });
+
+        function cambiar_tamaño(tamaño) {
+            caja.style.width = tamaño;
+
+</body >
+
+</html >
